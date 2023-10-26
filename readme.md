@@ -1,14 +1,15 @@
+ # "MIHIC dataset benchmark source codes"
  `In this project, we can perform the baseline experiments based on our self-built dataset.`
  
- #Part 1: Dataset introduction 
+ ## Part 1: Dataset introduction 
  The dataset includes two components: train and test, each of which is consisted of seven categories tissue patches.
  
  All the patches size is 128*128, extracted from tissue chips of Non-small cell lung cancer patients in Liaoning cancer hospital&institute.
  
 
-#Part 2:  Main program introduction
+## Part 2:  Main program introduction
 
-##train.py
+### train.py
 
 Used to train several general models based on self-defined model.
     #   models：
@@ -22,12 +23,12 @@ Used to train several general models based on self-defined model.
     
 All the img_size in model training and testing is (128,128). '_make_divisible function', it is used to ensure that a given value is divisible by a specified diviso.
 
-##test.py
+### test.py
 
 Used to calculate the relevant evaluation metrics of models corresponding to 'train.py'
 
 
-##train_timm.py
+### train_timm.py
 
 Train more general models using the pre-trained model in timm library.
     # models:
@@ -47,13 +48,13 @@ Train more general models using the pre-trained model in timm library.
     # twins_svt_base: twins_svt_base. img_size can be set as (128,128)(batchsize=512) or (224,224)(batchsize=256).
     '''
     
-##test_timm.py
+### test_timm.py
 Used to calculate the relevant evaluation metrics of models corresponding to 'train_timm.py'
 
-##b_test.py
+### b_test.py
 Used to process the whole tissue core directly. Predict the categories of each non-overlapping patches and overlay the corresponding colors. 
   
-##totxt.py
+### totxt.py
 To generate the txt of train and test path.
   
   
