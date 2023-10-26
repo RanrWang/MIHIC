@@ -1,0 +1,7 @@
+alveoli
+Immune cells
+Necrosis
+Other
+Stroma
+Tumor
+background
