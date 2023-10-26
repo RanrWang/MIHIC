@@ -14,14 +14,16 @@
 ### train.py
 
 Used to train several general models based on self-defined model.
-    #   models：
-    #   vgg16、vgg16_bn
-    #   mobilenetv2
-    #   googlenet
-    #   resnet50
-    #   vit_b_16
-    #   swin_transformer_small swin_transformer_tiny
-    #   swin_transformer_V2_tiny
+
+    # models：
+    
+    # vgg16、vgg16_bn
+    # mobilenetv2
+    # googlenet
+    # resnet50
+    # vit_b_16
+    # swin_transformer_small swin_transformer_tiny
+    # swin_transformer_V2_tiny
     
 All the img_size in model training and testing is (128,128). '_make_divisible function', it is used to ensure that a given value is divisible by a specified diviso.
 
