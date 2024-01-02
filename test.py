@@ -86,9 +86,9 @@ if __name__ == "__main__":
     num_test = len(test_lines)
 
     # ------------------------------------------------#
-    test_dataset = DataGenerator(test_lines, input_shape=input_shape, train=True)
+    test_dataset = DataGenerator(test_lines, input_shape=input_shape, train=False)
     gen_test = DataLoader(test_dataset, shuffle=True, batch_size=batch_size, num_workers=num_workers, pin_memory=True,
-                         drop_last=True)
+                         drop_last=False)
     model.to(device)
     model.eval()
     running_corrects = 0
