@@ -106,14 +106,6 @@ if __name__ == "__main__":
             groundtruth += labels.tolist()
             model.eval()
             outputs = model(inputs)
-            for p in outputs:
-                topk_values, topk_indices = torch.topk(p, 2)
-                second_largest_index = topk_indices[1]
-                if p.argmax(0)==3 and second_largest_index==4:
-                    p[4]=abs(p[3]-p[4])+1
-            # adjust background
-                if second_largest_index ==6 and abs(p.max()-p[6])<=1:
-                    p[6]+=1
             preds = outputs.argmax(1)
             prediction += preds.tolist()
             running_corrects += torch.sum(preds == labels.data)
