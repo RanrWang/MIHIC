@@ -65,7 +65,7 @@ Used to process the whole tissue core directly. Predict the categories of each n
 
 To generate the txt of train and test path.
   
-## citiation:
+## if you use this code or relevant dataset, please cite:
  @article{wang2024mihic,
   title={MIHIC: a multiplex IHC histopathological image classification dataset for lung cancer immune microenvironment quantification},
   author={Wang, Ranran and Qiu, Yusong and Wang, Tong and Wang, Mingkang and Jin, Shan and Cong, Fengyu and Zhang, Yong and Xu, Hongming},
